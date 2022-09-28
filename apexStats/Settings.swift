@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct Settings: View {
+    @AppStorage("userState") var userState: UserState = .registeredNameAndPlatform
+    
     var body: some View {
         NavigationView {
             ZStack {
                 VStack {
-                    
+                    Button(action: {
+                        withAnimation {
+                            userState = .None
+                        }
+                    }, label: {
+                        Text("Let's Get Started")
+                    })
+                    .padding()
                 }
             }
         }

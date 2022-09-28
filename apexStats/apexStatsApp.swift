@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct apexStatsApp: App {
+    @AppStorage("userState") var userState: UserState = .None
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if userState == .registeredNameAndPlatform {
+                ContentView()
+            }
+            if userState == .hasNotRegisteredNameAndPlatform {
+                onBoarding()
+            }
+            if userState == .None {
+                onBoarding()
+            }
         }
     }
 }
