@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct onboardingData: Identifiable {
     var id = UUID()
     var cardNumber: Int
