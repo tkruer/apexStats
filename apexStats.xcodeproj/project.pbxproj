@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F975844828E4C6A3008476B3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975844728E4C6A3008476B3 /* Home.swift */; };
+		F975844A28E4C6E1008476B3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975844928E4C6E1008476B3 /* Settings.swift */; };
+		F975844C28E4CD72008476B3 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975844B28E4CD72008476B3 /* Profile.swift */; };
+		F975844E28E4D8FF008476B3 /* onBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975844D28E4D8FF008476B3 /* onBoarding.swift */; };
+		F975845028E4D938008476B3 /* userStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975844F28E4D938008476B3 /* userStates.swift */; };
+		F975845228E4D9C3008476B3 /* onboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975845128E4D9C3008476B3 /* onboardingData.swift */; };
+		F975845428E4DDDB008476B3 /* resusableComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975845328E4DDDB008476B3 /* resusableComponents.swift */; };
 		F9E2EABC28E4BD7B00F3E5DB /* apexStatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2EABB28E4BD7B00F3E5DB /* apexStatsApp.swift */; };
 		F9E2EABE28E4BD7B00F3E5DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2EABD28E4BD7B00F3E5DB /* ContentView.swift */; };
 		F9E2EAC028E4BD7C00F3E5DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E2EABF28E4BD7C00F3E5DB /* Assets.xcassets */; };
@@ -14,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F975844728E4C6A3008476B3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		F975844928E4C6E1008476B3 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		F975844B28E4CD72008476B3 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		F975844D28E4D8FF008476B3 /* onBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoarding.swift; sourceTree = "<group>"; };
+		F975844F28E4D938008476B3 /* userStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userStates.swift; sourceTree = "<group>"; };
+		F975845128E4D9C3008476B3 /* onboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingData.swift; sourceTree = "<group>"; };
+		F975845328E4DDDB008476B3 /* resusableComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resusableComponents.swift; sourceTree = "<group>"; };
 		F9E2EAB828E4BD7B00F3E5DB /* apexStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = apexStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E2EABB28E4BD7B00F3E5DB /* apexStatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apexStatsApp.swift; sourceTree = "<group>"; };
 		F9E2EABD28E4BD7B00F3E5DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +67,13 @@
 			children = (
 				F9E2EABB28E4BD7B00F3E5DB /* apexStatsApp.swift */,
 				F9E2EABD28E4BD7B00F3E5DB /* ContentView.swift */,
+				F975844D28E4D8FF008476B3 /* onBoarding.swift */,
+				F975845128E4D9C3008476B3 /* onboardingData.swift */,
+				F975844728E4C6A3008476B3 /* Home.swift */,
+				F975844928E4C6E1008476B3 /* Settings.swift */,
+				F975844B28E4CD72008476B3 /* Profile.swift */,
+				F975844F28E4D938008476B3 /* userStates.swift */,
+				F975845328E4DDDB008476B3 /* resusableComponents.swift */,
 				F9E2EABF28E4BD7C00F3E5DB /* Assets.xcassets */,
 				F9E2EAC128E4BD7C00F3E5DB /* Preview Content */,
 			);
@@ -137,7 +158,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F975845428E4DDDB008476B3 /* resusableComponents.swift in Sources */,
 				F9E2EABE28E4BD7B00F3E5DB /* ContentView.swift in Sources */,
+				F975844C28E4CD72008476B3 /* Profile.swift in Sources */,
+				F975844E28E4D8FF008476B3 /* onBoarding.swift in Sources */,
+				F975845028E4D938008476B3 /* userStates.swift in Sources */,
+				F975845228E4D9C3008476B3 /* onboardingData.swift in Sources */,
+				F975844828E4C6A3008476B3 /* Home.swift in Sources */,
+				F975844A28E4C6E1008476B3 /* Settings.swift in Sources */,
 				F9E2EABC28E4BD7B00F3E5DB /* apexStatsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
