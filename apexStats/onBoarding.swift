@@ -116,6 +116,7 @@ struct onBoarding: View {
                         Text("Let's Get Started")
                     })
                     .disabled(self.userAccount.isEmpty)
+                    .disabled(self.userPlatform.isEmpty)
                     .buttonStyle(LetsGetStartedButton())
                     .padding()
                 }

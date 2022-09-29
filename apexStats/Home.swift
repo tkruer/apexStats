@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct Home: View {
+    
+    @State var users: [User] = []
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(users) { user in
+            Text(users.global.uid)
+                .font(.headline)
+            Text(users.global.name)
+                .font(.subheadline)
+                }
+                .onAppear {
+                    apiCall().getUsers { (users) in
+                        self.users = users
+            }
+        }
     }
 }
 
