@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
         TabView {
             Home()
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-            Profile()
+            Search()
                 .tabItem {
                     Label("Search", systemImage: "magnifyingglass")
                 }
@@ -26,7 +27,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Settings", systemImage: "gear")
             }
+         
         }
+        .accentColor(.red)
+
     }
 }
 

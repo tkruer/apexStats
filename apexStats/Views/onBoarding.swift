@@ -18,7 +18,7 @@ struct onBoarding: View {
     var selectedType: UINotificationFeedbackGenerator.FeedbackType = .success
     var body: some View {
         ZStack {
-            RadialGradient(gradient: Gradient(colors: [.black, .gray, .red]), center: .bottom, startRadius: 2, endRadius: 900)
+            RadialGradient(gradient: Gradient(colors: [.gray, .black]), center: .bottom, startRadius: 2, endRadius: 900)
                     .ignoresSafeArea()
             ScrollView {
                 LazyVStack {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F91D906D28E7772A009F6695 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D906C28E7772A009F6695 /* Search.swift */; };
+		F91D906F28E78479009F6695 /* safariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D906E28E78479009F6695 /* safariView.swift */; };
 		F975844828E4C6A3008476B3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975844728E4C6A3008476B3 /* Home.swift */; };
 		F975844A28E4C6E1008476B3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975844928E4C6E1008476B3 /* Settings.swift */; };
 		F975844C28E4CD72008476B3 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975844B28E4CD72008476B3 /* Profile.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F91D906C28E7772A009F6695 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		F91D906E28E78479009F6695 /* safariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = safariView.swift; sourceTree = "<group>"; };
 		F975844728E4C6A3008476B3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		F975844928E4C6E1008476B3 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		F975844B28E4CD72008476B3 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -46,6 +50,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F91D906828E772A4009F6695 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F975844728E4C6A3008476B3 /* Home.swift */,
+				F975844928E4C6E1008476B3 /* Settings.swift */,
+				F975844B28E4CD72008476B3 /* Profile.swift */,
+				F975844D28E4D8FF008476B3 /* onBoarding.swift */,
+				F91D906C28E7772A009F6695 /* Search.swift */,
+				F91D906E28E78479009F6695 /* safariView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F91D906928E772C5009F6695 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F975845328E4DDDB008476B3 /* resusableComponents.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F91D906A28E772D9009F6695 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F975844F28E4D938008476B3 /* userStates.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F91D906B28E772E0009F6695 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F975845528E50C59008476B3 /* userViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		F9E2EAAF28E4BD7B00F3E5DB = {
 			isa = PBXGroup;
 			children = (
@@ -67,13 +108,10 @@
 			children = (
 				F9E2EABB28E4BD7B00F3E5DB /* apexStatsApp.swift */,
 				F9E2EABD28E4BD7B00F3E5DB /* ContentView.swift */,
-				F975844D28E4D8FF008476B3 /* onBoarding.swift */,
-				F975845528E50C59008476B3 /* userViewModel.swift */,
-				F975844728E4C6A3008476B3 /* Home.swift */,
-				F975844928E4C6E1008476B3 /* Settings.swift */,
-				F975844B28E4CD72008476B3 /* Profile.swift */,
-				F975844F28E4D938008476B3 /* userStates.swift */,
-				F975845328E4DDDB008476B3 /* resusableComponents.swift */,
+				F91D906828E772A4009F6695 /* Views */,
+				F91D906B28E772E0009F6695 /* ViewModels */,
+				F91D906A28E772D9009F6695 /* Models */,
+				F91D906928E772C5009F6695 /* Utils */,
 				F9E2EABF28E4BD7C00F3E5DB /* Assets.xcassets */,
 				F9E2EAC128E4BD7C00F3E5DB /* Preview Content */,
 			);
@@ -164,7 +202,9 @@
 				F975845628E50C59008476B3 /* userViewModel.swift in Sources */,
 				F975844E28E4D8FF008476B3 /* onBoarding.swift in Sources */,
 				F975845028E4D938008476B3 /* userStates.swift in Sources */,
+				F91D906F28E78479009F6695 /* safariView.swift in Sources */,
 				F975844828E4C6A3008476B3 /* Home.swift in Sources */,
+				F91D906D28E7772A009F6695 /* Search.swift in Sources */,
 				F975844A28E4C6E1008476B3 /* Settings.swift in Sources */,
 				F9E2EABC28E4BD7B00F3E5DB /* apexStatsApp.swift in Sources */,
 			);
