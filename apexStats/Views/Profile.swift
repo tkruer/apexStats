@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Profile: View {
     @AppStorage("userAccount") var userAccount: String = ""
+    @AppStorage("userPlatform") var userPlatform: String = ""
+    @ObservedObject private var getData = GetStats()
     var body: some View {
         ZStack {
             RadialGradient(gradient: Gradient(colors: [.gray, .black]), center: .bottom, startRadius: 2, endRadius: 900)
@@ -35,7 +37,7 @@ struct Profile: View {
                                 .foregroundColor(.green)
                             Spacer()
                             Button(action: {
-                                
+                               
                             }, label: {
                                 Image(systemName: "arrow.clockwise")
                                     .font(.title3)
@@ -63,6 +65,8 @@ struct Profile: View {
                                         .bold()
                                         .foregroundColor(.white)
                                     Spacer()
+                                    Text("Loading...")
+                                        .foregroundColor(.white)
                                 }.padding()
                                 HStack {
                                     Text("Rank Name:")
@@ -352,6 +356,9 @@ struct Profile: View {
                         }
                     }
                 }
+            }
+            .onAppear {
+                getData.getStats(playerName: userAccount, playerPlatform: userPlatform)
             }
         }
     }

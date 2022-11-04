@@ -8,8 +8,6 @@
 import Foundation
 import SwiftUI
 
-
-
 public struct CustomButtonStyle: ButtonStyle {
     @Binding var buttonSelected: Bool
     public func makeBody(configuration: Self.Configuration) -> some View {

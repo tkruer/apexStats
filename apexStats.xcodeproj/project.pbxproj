@@ -15,11 +15,12 @@
 		F975844E28E4D8FF008476B3 /* onBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975844D28E4D8FF008476B3 /* onBoarding.swift */; };
 		F975845028E4D938008476B3 /* userStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975844F28E4D938008476B3 /* userStates.swift */; };
 		F975845428E4DDDB008476B3 /* resusableComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975845328E4DDDB008476B3 /* resusableComponents.swift */; };
-		F975845628E50C59008476B3 /* userViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975845528E50C59008476B3 /* userViewModel.swift */; };
 		F9E2EABC28E4BD7B00F3E5DB /* apexStatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2EABB28E4BD7B00F3E5DB /* apexStatsApp.swift */; };
 		F9E2EABE28E4BD7B00F3E5DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2EABD28E4BD7B00F3E5DB /* ContentView.swift */; };
 		F9E2EAC028E4BD7C00F3E5DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E2EABF28E4BD7C00F3E5DB /* Assets.xcassets */; };
 		F9E2EAC328E4BD7C00F3E5DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E2EAC228E4BD7C00F3E5DB /* Preview Assets.xcassets */; };
+		F9E5E4D12915B95D0002D7CC /* statsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E5E4D02915B95D0002D7CC /* statsViewModel.swift */; };
+		F9E5E4D32915B9700002D7CC /* statsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E5E4D22915B9700002D7CC /* statsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,12 +32,13 @@
 		F975844D28E4D8FF008476B3 /* onBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoarding.swift; sourceTree = "<group>"; };
 		F975844F28E4D938008476B3 /* userStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userStates.swift; sourceTree = "<group>"; };
 		F975845328E4DDDB008476B3 /* resusableComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resusableComponents.swift; sourceTree = "<group>"; };
-		F975845528E50C59008476B3 /* userViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userViewModel.swift; sourceTree = "<group>"; };
 		F9E2EAB828E4BD7B00F3E5DB /* apexStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = apexStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E2EABB28E4BD7B00F3E5DB /* apexStatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apexStatsApp.swift; sourceTree = "<group>"; };
 		F9E2EABD28E4BD7B00F3E5DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F9E2EABF28E4BD7C00F3E5DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9E2EAC228E4BD7C00F3E5DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F9E5E4D02915B95D0002D7CC /* statsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statsViewModel.swift; sourceTree = "<group>"; };
+		F9E5E4D22915B9700002D7CC /* statsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				F975844F28E4D938008476B3 /* userStates.swift */,
+				F9E5E4D22915B9700002D7CC /* statsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -82,7 +85,7 @@
 		F91D906B28E772E0009F6695 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				F975845528E50C59008476B3 /* userViewModel.swift */,
+				F9E5E4D02915B95D0002D7CC /* statsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -199,14 +202,15 @@
 				F975845428E4DDDB008476B3 /* resusableComponents.swift in Sources */,
 				F9E2EABE28E4BD7B00F3E5DB /* ContentView.swift in Sources */,
 				F975844C28E4CD72008476B3 /* Profile.swift in Sources */,
-				F975845628E50C59008476B3 /* userViewModel.swift in Sources */,
 				F975844E28E4D8FF008476B3 /* onBoarding.swift in Sources */,
 				F975845028E4D938008476B3 /* userStates.swift in Sources */,
 				F91D906F28E78479009F6695 /* safariView.swift in Sources */,
 				F975844828E4C6A3008476B3 /* Home.swift in Sources */,
 				F91D906D28E7772A009F6695 /* Search.swift in Sources */,
+				F9E5E4D12915B95D0002D7CC /* statsViewModel.swift in Sources */,
 				F975844A28E4C6E1008476B3 /* Settings.swift in Sources */,
 				F9E2EABC28E4BD7B00F3E5DB /* apexStatsApp.swift in Sources */,
+				F9E5E4D32915B9700002D7CC /* statsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

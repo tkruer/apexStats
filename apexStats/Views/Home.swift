@@ -10,6 +10,7 @@ import SwiftUI
 struct Home: View {
     @AppStorage("userAccount") var userAccount: String = ""
     @State private var showingSheetSafari: Bool = false
+    @ObservedObject private var getData = GetStats()
     var body: some View {
         ZStack {
             RadialGradient(gradient: Gradient(colors: [.gray, .black]), center: .bottom, startRadius: 2, endRadius: 900)
@@ -349,10 +350,18 @@ struct Home: View {
                                             .foregroundColor(.white)
                                             .bold()
                                         Spacer()
+                                        Text("Loading...")
+                                            .foregroundColor(.white)
                                     }.padding()
                                     VStack {
-                                        Text("Status:")
-                                            .foregroundColor(.white)
+                                        HStack {
+                                            Text("Status:")
+                                                .foregroundColor(.white)
+                                            Spacer()
+                                            Text("Loading...")
+                                                .foregroundColor(.white)
+                                        }
+
                                         Text("Response Code:")
                                             .foregroundColor(.white)
                                         Text("Ping (ms):")
@@ -411,6 +420,9 @@ struct Home: View {
                         }.padding()
                     }
                 }
+            }
+            .onAppear {
+               // server.retrieveData()
             }
         }
     }

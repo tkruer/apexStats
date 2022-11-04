@@ -11,9 +11,27 @@ struct Settings: View {
     @AppStorage("userState") var userState: UserState = .registeredNameAndPlatform
     
     var body: some View {
-        Form {
-            Group {
-                Text("asdf")
+        NavigationView {
+            Form {
+                NavigationLink(destination: EmptyView(), label: {
+                    HStack {
+                        Image(systemName: "house")
+                        Text("Reset")
+                    }
+                })
+                NavigationLink(destination: EmptyView(), label: {
+                    HStack {
+                        Image(systemName: "house")
+                        Text("Reset")
+                    }
+                })
+                NavigationLink(destination: EmptyView(), label: {
+                    HStack {
+                        Image(systemName: "house")
+                        Text("Go home ")
+                    }
+                })
+
             }
         }
     }
@@ -22,5 +40,6 @@ struct Settings: View {
 struct Settings_Previews: PreviewProvider {
     static var previews: some View {
         Settings()
+            
     }
 }

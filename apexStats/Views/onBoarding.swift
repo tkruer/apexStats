@@ -108,7 +108,6 @@ struct onBoarding: View {
                             playNotificationHaptic(selectedType)
                             withAnimation {                                
                                 userState = .registeredNameAndPlatform
-                                
                             }
                         }
 
